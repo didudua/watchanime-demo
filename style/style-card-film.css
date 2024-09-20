@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body, .card-film{
+    font-family: 'roboto';
+    width: 224px;
+}
+.card-film{
+    cursor: pointer;
+    width: 224px;
+    height: 333px;
+    border-radius: 20px;
+    background-color: black;
+}
+.top{
+    position:absolute;
+    width: 70px;
+    height: 28px;
+    border: 1px solid white;
+    background-color: rgba(35, 35, 35, 1);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+    z-index: 1; /* .top nằm trên .avatar */
+    transition: color 0.3s ease;
+}
+#icon-play{
+    position: absolute;
+    font-size: 89px;
+    top: 0;
+    left: 0;
+    margin-top: 130px;
+    margin-left: 65px;
+    color: rgba(75, 75, 75, 0);
+    transition: color 0.3s ease;
+    z-index: 1;
+    
+}
+.avatar{
+    position: relative;
+    width: 224px;
+    height: 333px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+main{
+    color: white;
+}
+main .name{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+main .author-year{
+    font-size: 20px;
+}
+
+.card-film:hover #icon-play {
+    color: rgba(222, 222, 222, 0.8);
+    opacity: 0.8;
+}
+.card-film:hover .avatar{
+    opacity: 0.8;
+    z-index: 0;
+}
+.card-film:hover .top{
+    opacity: 0.8;
+}
+a{
+    text-decoration: none;
+}

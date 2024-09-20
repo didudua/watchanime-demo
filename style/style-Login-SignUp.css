@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(#09080b62, #09080B62),url("/WEB_FILM/Image/background.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color:#ADADAD;
+}
+
+.login,.sign-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-login,
+.form-sign-up{
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 709px;
+    height: 519px;
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+    justify-content: center;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.login img{
+    width: 29px;
+    height: 29px;
+}
+input {
+    width: 375px;
+    height: 61px;
+    background-color: #3C3C3C;
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    color: white;
+}
+input::placeholder{
+    color: #ADADAD;
+}
+.form-login .find-login,
+.form-sign-up .find-sign-up{
+    cursor: pointer;
+    width: 375px;
+    height: 61px;
+    background-color: #C7000D;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+.form-login .find-login:hover,
+.form-sign-up .find-sign-up:hover{
+    background-color: #c7000dc4;
+}
+.login .remember{
+    display: flex;
+    justify-content: space-between;
+}
+.login .social-network-container{
+    display: grid;
+}
+.login .social-network{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.login .social-network img{
+    margin-right: 10px;
+}
+.login .find-sign-up{
+    margin-top: 5px;
+}
+.sign-up{
+    display: none;
+}

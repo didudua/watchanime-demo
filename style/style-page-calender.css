@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+main{
+    display: grid;
+    justify-content: center;
+}
+.list-card-film{
+    width: 1304px;
+    height: 406px;
+    background-color: rgb(103, 103, 103);
+    margin-bottom: 100px;
+    display: flex;
+}
+.top{
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 52px;
+}
+.monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday{
+    width: 1304px;
+    height: 1070px;
+    margin-bottom: 30px;
+    background-color: rgba(217, 217, 217, 0.1);
+    padding: 47px;
+    border-radius: 10px;
+}
+.card-film-container {
+    display: flex;
+    flex-wrap: wrap;  /* Cho phép các thẻ div xuống dòng */
+    justify-content: space-between;
+}
+
+.card-film {
+    width: 224px;
+    height: 437px;
+    margin-bottom: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.card-film-container a{
+    height: 417px;
+    margin-bottom: 52px;
+}

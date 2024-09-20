@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style-header.css">
+    <link rel="stylesheet" href="/style/style-Login-SignUp.css">
+    <link rel="icon" href="/Image/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>I-Design Film</title>
+</head>
+<body>
+    <header>
+        <a href="/index.html"><img src="/Image/logo.png" alt="" class="logo"></a>
+        <nav>
+            <a href="/index.html" style="color: #FF0000;">Trang chủ</a>
+            <a href="/page/page-film.html">Top Phim</a>
+            <a href="/page/page-calender.html">Lịch Chiếu</a>
+            <a href="/page/page-option.html">Thể Loại</a>
+        </nav>
+        <div class="box-search"> 
+            <label for="search"><i class='bx bx-search' ></i></label>
+            <input type="text" placeholder="Tìm kiếm" id="search">
+        </div>
+        <a href="/page/Login-SignUp.html">
+            <button class="find-login">
+            Đăng Nhập
+            </button>
+        </a>
+    </header>
+    <div class="login">
+        <form action="" class="form-login">
+            <div class="title"><h1>Đăng Nhập</h1></div>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Mật khẩu">
+            <button type="submit" class="find-login">ĐĂNG NHẬP</button>
+            <div class="remember">
+                <label for="remember-box">
+                    <input type="checkbox" id="remember-box" style="width: 12px; height: 12px;">
+                    Lưu mật khẩu
+                </label>
+                <a href="">Quên mật khẩu</a>
+            </div>
+            <div class="social-network-container">
+                <a href="" class="social-network">
+                    <img src="/Image/facebook.png" alt="">
+                    Đăng nhập bằng Facebook
+                </a>
+                <a href="" class="social-network">
+                    <img src="/Image/google.png" alt="">
+                    Đăng nhập bằng Google
+                </a>
+            </div>
+            <p style="color: #ADADAD;" class="find-sign-up">Chưa có tài khoản? <a href="#"><b style="color: white;">Đăng Ký ngay</b></a></p>
+        </form>
+    </div>
+    <div class="sign-up">
+        <form action="" class="form-sign-up">
+            <div class="title"><h1>Đăng Ký</h1></div>
+            <input type="text" placeholder="Tên Tài Khoản">
+            <input type="password" placeholder="Mật khẩu">
+            <input type="password" placeholder="Nhập lại Mật khẩu">
+            <input type="email" placeholder="Email">
+            <button type="submit" class="find-sign-up">ĐĂNG KÝ</button>
+            <p style="color: #ADADAD;" class="find-login">Đã có tài khoản? <a href="#"><b style="color: white;">Đăng Nhập ngay</b></a></p>
+        </form>
+    </div>
+
+    <script>
+        document.querySelector('.find-sign-up a').addEventListener('click', function(event) {
+            event.preventDefault();  // Ngăn chặn hành động mặc định của liên kết
+            document.querySelector('.login').style.display = 'none';  // Ẩn khung đăng nhập
+            document.querySelector('.sign-up').style.display = 'flex';  // Hiển thị khung đăng ký
+            document.querySelector('.sign-up').scrollIntoView({ behavior: 'smooth' });  // Trượt tới khung đăng ký
+        });
+    </script>
+    <script>
+        document.querySelector('.find-login a').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.querySelector('.sign-up').style.display = 'none';  // Ẩn khung đăng ký
+            document.querySelector('.login').style.display = 'flex';  // Hiển thị khung đăng nhập
+            document.querySelector('.login').scrollIntoView({ behavior: 'smooth' });  // Trượt tới khung đăng nhập
+        });
+    </script>
+</body>
+</html>

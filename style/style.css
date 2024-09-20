@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+main{
+    display: grid;
+    justify-content: center;
+}
+.list-card-film{
+    width: 1304px;
+    height: 406px;
+    background-color: rgb(103, 103, 103);
+    margin-bottom: 100px;
+    display: flex;
+}
+.top{
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 52px;
+}
+.new-update, .watch-alot, .top-like{
+    width: 1304px;
+    height: 1132px;
+    margin-bottom: 52px;
+}
+.card-film-container {
+    display: flex;
+    flex-wrap: wrap;  /* Cho phép các thẻ div xuống dòng */
+    justify-content: space-between;
+}
+/* width: 224px;
+    height: 437px; */
+.card-film {
+    width: 224px;
+    height: 437px;
+    margin-bottom: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.see-more{
+    height: 65px;
+    background-color: rgba(217, 217, 217, 0.1);
+    border-radius: 3px;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.see-more:hover{
+    cursor: pointer;
+    color: rgba(255, 0, 0, 1);
+}
+.card-film-container a{
+    height: 417px;
+    margin-bottom: 52px;
+}

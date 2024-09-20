@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+main{
+    display: grid;
+    justify-content: center;
+}
+.top{
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 52px;
+}
+.box-film{
+    width: 1304px;
+    height: 3072px;
+    margin-bottom: 52px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.card-film-container {
+    display: flex;
+    flex-wrap: wrap;  /* Cho phép các thẻ div xuống dòng */
+    justify-content: space-between;
+    height: 2865px;
+    margin-bottom: 52px;
+
+}
+.card-film {
+    width: 224px;
+    height: 437px;
+    margin-bottom: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+}
+.tag-page{
+    display: flex;
+    width: 863px;
+    height: 65px;
+    justify-content: space-between;
+}
+.tag-left, .tag, .tag-right, .tag1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(217, 217, 217, 0.1);
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+.tag-left{
+    width: 272px;
+    height: 65px;
+}
+.tag,.tag1{
+    width: 65px;
+    height: 65px;
+}
+.tag1{
+    color: rgba(255, 0, 0, 1);
+}
+.tag-right{
+    width: 206px;
+    height: 65px;
+}
+.tag:hover, .tag-right:hover{
+    background-color: rgba(92, 0, 0, 0.51);
+}
